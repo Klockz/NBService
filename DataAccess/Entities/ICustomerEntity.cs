@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    class ICustomerEntity
+    public interface ICustomerEntity
     {
+        int Id { get; set; }
+        string Name { get; set; }
+        string ContactPerson { get; set; }
+        string Address { get; set; }
+        int Phone { get; set; }
     }
 }

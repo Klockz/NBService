@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Data
 {
-    class IDataAccess
+    internal interface IDataAccess
     {
+
     }
 }
