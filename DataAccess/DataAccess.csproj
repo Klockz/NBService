@@ -40,11 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\ICRUDController.cs" />
-    <Compile Include="Controller\impl\CustomerController.cs" />
+    <Compile Include="Controller\impl\AppointmentController.cs" />
     <Compile Include="DataAccessFacade.cs" />
     <Compile Include="Data\IDataAccess.cs" />
-    <Compile Include="Entities\ICustomerEntity.cs" />
-    <Compile Include="Entities\impl\CustomerEntity.cs" />
+    <Compile Include="Entities\IAppointmentEntity.cs" />
+    <Compile Include="Entities\impl\AppointmentEntity.cs" />
     <Compile Include="IDataAccessFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

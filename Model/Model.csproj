@@ -41,8 +41,8 @@
   <ItemGroup>
     <Compile Include="DomainModel\Facade\IModelFacade.cs" />
     <Compile Include="DomainModel\Facade\ModelFacade.cs" />
-    <Compile Include="DomainModel\ICustomer.cs" />
-    <Compile Include="DomainModel\impl\Customer.cs" />
+    <Compile Include="DomainModel\IAppointment.cs" />
+    <Compile Include="DomainModel\impl\Appointment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Entities.impl
+namespace DataAccess.Controller.impl
 {
-    class CustomerEntity
+    class AppointmentController
     {
     }
 }

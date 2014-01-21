@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.DomainModel
+namespace Model.DomainModel.impl
 {
-    class ICustomer
+    class Appointment
     {
     }
 }
