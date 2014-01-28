@@ -9,7 +9,7 @@ namespace DataAccess.Controller
     internal interface ICRUDController<T>
     {
         T Load(int id);
-        bool Save(T player);
+        bool Save(T t);
         bool Update(T t);
         bool Delete(T t);
 

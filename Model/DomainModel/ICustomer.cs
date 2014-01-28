@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.DomainModel
 {
-    class ICustomer
+    internal interface ICustomer
     {
     }
 }

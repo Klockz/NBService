@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.DomainModel.Facade
 {
-    class ModelFacade
+    public class ModelFacade : IModelFacade
     {
     }
 }

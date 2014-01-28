@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.DomainModel.impl
 {
-    class Appointment
+    public class Appointment : IAppointment
     {
     }
 }
