@@ -39,15 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainModel\Facade\IModelFacade.cs" />
-    <Compile Include="DomainModel\Facade\ModelFacade.cs" />
-    <Compile Include="DomainModel\IAppointment.cs" />
-    <Compile Include="DomainModel\ICustomer.cs" />
-    <Compile Include="DomainModel\impl\Appointment.cs" />
-    <Compile Include="DomainModel\impl\Customer.cs" />
+    <Compile Include="Appointment.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{904eef88-97e0-4a70-b7ee-942ea6064a1c}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{c2f97d33-1d2e-4fde-9632-9ce9484b4dfb}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

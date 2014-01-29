@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controller;
+using Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,20 @@ namespace NB_Service
     /// </summary>
     public partial class MainWindow : Window
     {
+        CustomerFacade cf = new CustomerFacade();
+        public List<ICustomer> customersList;
+
         public MainWindow()
         {
             InitializeComponent();
+            customersList = cf.LoadAllCustomers();
+            customersListView.ItemsSource = customersList;
+        }
+
+        private void CreateCustomerClicked(object sender, RoutedEventArgs e)
+        {
+            CreateCustomerDialog ccd = new CreateCustomerDialog(this, cf);
+            ccd.ShowDialog();
         }
     }
 }

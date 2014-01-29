@@ -3,6 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="createCustomerButton" Content="Opret kunde" HorizontalAlignment="Left" Margin="373,292,0,0" VerticalAlignment="Top" Width="135" Click="CreateCustomerClicked"/>
+        <ListView x:Name="customersListView" HorizontalAlignment="Left" Height="253" Margin="373,10,0,0" VerticalAlignment="Top" Width="135">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Slet kunde" HorizontalAlignment="Left" Margin="373,268,0,0" VerticalAlignment="Top" Width="135"/>
+
     </Grid>
 </Window>

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.DomainModel.Facade
+namespace Controller
 {
-    public class ModelFacade : IModelFacade
+    public class AppointmentFacade
     {
+
+
     }
 }
