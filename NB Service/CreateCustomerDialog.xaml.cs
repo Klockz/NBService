@@ -60,7 +60,11 @@ namespace NB_Service
 
         private void deleteAppointmentClicked(object sender, RoutedEventArgs e)
         {
-
+            for (var i = 0; i < AppointmentListView.SelectedItems.Count; i++)
+            {
+                AppointmentListView.Items.Remove(AppointmentListView.SelectedItems[i].ToString());
+                i--;
+            }
         }
     }
 }

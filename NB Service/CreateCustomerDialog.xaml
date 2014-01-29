@@ -17,7 +17,7 @@
         <Label Content="Tlf nr.:" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="112"/>
         <Button x:Name="saveButton" Content="Gem" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" Width="75" Click="SaveCustomerClicked"/>
         <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="172,212,0,0" VerticalAlignment="Top" Width="75" Click="ExitButtonClicked"/>
-        <ListView HorizontalAlignment="Left" Height="181" Margin="252,10,0,0" VerticalAlignment="Top" Width="232">
+        <ListView x:Name="AppointmentListView" HorizontalAlignment="Left" Height="181" Margin="252,10,0,0" VerticalAlignment="Top" Width="232">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
