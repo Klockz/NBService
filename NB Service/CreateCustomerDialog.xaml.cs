@@ -24,13 +24,15 @@ namespace NB_Service
         MainWindow mainWindow;
         CustomerFacade cf;
         ICustomer icustomer;
+        AppointmentFacade af;
 
-        public CreateCustomerDialog(MainWindow mainWindow, CustomerFacade cfInput)
+        public CreateCustomerDialog(MainWindow mainWindow, CustomerFacade cfInput, AppointmentFacade afInput)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
             cf = cfInput;
             icustomer = cf.CreateCustomer();
+            af = afInput;
         }
 
         private void SaveCustomerClicked(object sender, RoutedEventArgs e)
@@ -55,7 +57,7 @@ namespace NB_Service
 
         private void addAppointmentClicked(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void deleteAppointmentClicked(object sender, RoutedEventArgs e)

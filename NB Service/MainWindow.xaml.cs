@@ -23,10 +23,12 @@ namespace NB_Service
     public partial class MainWindow : Window
     {
         CustomerFacade cf = new CustomerFacade();
+        private AppointmentFacade af;
         public List<ICustomer> customersList;
 
         public MainWindow()
         {
+            af = new AppointmentFacade(cf);
             InitializeComponent();
             customersList = cf.LoadAllCustomers();
             customersListView.ItemsSource = customersList;
@@ -34,8 +36,13 @@ namespace NB_Service
 
         private void CreateCustomerClicked(object sender, RoutedEventArgs e)
         {
-            CreateCustomerDialog ccd = new CreateCustomerDialog(this, cf);
+            CreateCustomerDialog ccd = new CreateCustomerDialog(this, cf, af);
             ccd.ShowDialog();
+        }
+
+        private void changeCustomerButtonClicked(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

@@ -35,10 +35,19 @@ namespace Controller
             return customersList;
         }
 
+        public void AddAppointmentToCustomer(IAppointment iappointment, ICustomer icustomer)
+        {
+           
+        }
 
-
-
-
+        public List<IAppointment> AddAllCustomerAppointmentsToList(ICustomer icustomer, List<IAppointment> iappointmentsList)
+        {
+            for (int i = 0; i < icustomer.Appointments.Count; i++)
+            {
+                iappointmentsList.Add(icustomer.Appointments[i]);
+            }
+            return iappointmentsList;
+        }
 
         //public List<IResource> theResources { get; private set; }
         //ResourceAccessFacade raf;
